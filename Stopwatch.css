@@ -1,0 +1,61 @@
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height */
+        margin: 0; /* Remove default margin */
+        font-family: monospace;
+        font-weight: bold;
+        background-color: #14213d;
+        color: #e5b208;
+    }
+    
+    .wrapper {
+        max-width: 80%; /* Limit width for better readability on larger screens */
+        padding: 20px; /* Padding for better spacing */
+        text-align: center; /* Center content */
+    }
+    
+    .clock {
+        font-size: 7vw; /* Responsive font size based on viewport width */
+        margin-bottom: 20px; /* Space between clock and buttons */
+    }
+    
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .buttons button {
+        font-size: 3vw; /* Responsive font size based on viewport width */
+        margin: 10px; /* Adjusted margin for better spacing */
+        padding: 10px 20px; /* Adjusted padding for better button appearance */
+        border: none;
+        font-family: monospace;
+        font-weight: bold;
+        color: #e5b208;
+        background-color: #000814;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .buttons button:hover {
+        background-color: #011533;
+    }
+    
+    /* Responsive adjustments for mobile devices */
+    @media (max-width: 700px) {
+        .wrapper {
+            max-width: 95%; /* Adjusted max-width for smaller screens */
+        }
+        .clock {
+            font-size: 10vw; /* Adjusted font size for smaller screens */
+        }
+        .buttons button {
+            font-size: 7vw; /* Adjusted font size for smaller screens */
+            width: 40%; /* Adjusted width for smaller screens */
+        }
+    }
+    
